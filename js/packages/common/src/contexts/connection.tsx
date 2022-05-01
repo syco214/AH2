@@ -45,7 +45,7 @@ export const ENDPOINTS: Array<Endpoint> = [
   {
     name: 'mainnet-beta',
     label: 'mainnet-beta',
-    url: 'https://api.metaplex.solana.com/',
+    url: 'https://solana-api.projectserum.com/',
     chainId: ChainId.MainnetBeta,
   },
   {
@@ -656,7 +656,7 @@ export const getUnixTs = () => {
   return new Date().getTime() / 1000;
 };
 
-const DEFAULT_TIMEOUT = 30000;
+const DEFAULT_TIMEOUT = 45000;
 
 export async function sendSignedTransaction({
   signedTransaction,
